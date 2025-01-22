@@ -4,7 +4,8 @@ import React, { useEffect, useRef } from "react";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const CurvedMarquee = ({ images, radius = 300, rotationSpeed = 0.01 }: any) => {
-  const marqueeRef = useRef(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const marqueeRef = useRef<any>(null);
   const angleRef = useRef(0); // Keeps track of the current angle
 
   useEffect(() => {
@@ -16,7 +17,8 @@ const CurvedMarquee = ({ images, radius = 300, rotationSpeed = 0.01 }: any) => {
       const angleIncrement = 360 / totalItems; // Spread images evenly
 
       // Update the position of each image along the curved path
-      Array.from(items).forEach((item, index) => {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      Array.from(items).forEach((item: any, index) => {
         const currentAngle = angleRef.current + angleIncrement * index;
         const radian = (currentAngle * Math.PI) / 180;
 
@@ -39,7 +41,7 @@ const CurvedMarquee = ({ images, radius = 300, rotationSpeed = 0.01 }: any) => {
   return (
     <div className="curved-marquee-container">
       <div className="curved-marquee" ref={marqueeRef}>
-        {images.map((src, index) => (
+        {images.map((src: string, index: number) => (
           <img
             key={index}
             src={src}
