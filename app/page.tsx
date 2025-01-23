@@ -11,14 +11,14 @@ const images = [
 export default function Home() {
   return (
     <div className="w-screen min-h-screen flex items-center justify-between flex-col py-20">
-      <h6>Product Manager</h6>
-      <CurvedMarquee images={images} radius={400} rotationSpeed={0.01} />
+      <h6>PRODUCTION MANAGER®</h6>
+      <CurvedMarquee images={images} radius={400} rotationSpeed={0.09} />
       <div className="flex flex-col items-center">
-        <a className="cursor-pointer">FULL SERVICE</a>
+        <a className="cursor-pointer">GOGO</a>
         <a className="cursor-pointer">CONTACT</a>
         <a className="cursor-pointer">INFO</a>
         <a className="cursor-pointer">SHOP</a>
-        <a className="cursor-pointer">LINESHEETS</a>
+        {/* <a className="cursor-pointer">LINESHEETS</a> */}
       </div>
     </div>
   );
