@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import React, { useEffect, useRef } from "react";
@@ -23,7 +24,7 @@ const CurvedMarquee = ({ images, radius = 300, rotationSpeed = 0.01 }: any) => {
         const radian = (currentAngle * Math.PI) / 180;
 
         const x = radius * Math.sin(radian); // Horizontal movement
-        const y = (radius * Math.cos(radian)) / 2; // Vertical curve (elliptical effect)
+        const y = (radius * Math.cos(radian)) / 4; // Vertical curve (elliptical effect)
         const z = radius * Math.cos(radian); // Depth for 3D
 
         item.style.transform = `translate3d(${x}px, ${y}px, ${z}px)`;
@@ -41,13 +42,14 @@ const CurvedMarquee = ({ images, radius = 300, rotationSpeed = 0.01 }: any) => {
   return (
     <div className="curved-marquee-container">
       <div className="curved-marquee" ref={marqueeRef}>
-        {images.map((src: string, index: number) => (
-          <img
-            key={index}
-            src={src}
-            alt={`Image ${index}`}
-            className="curved-marquee-item w-[100px] h-auto"
-          />
+        {images.map((item: any, index: number) => (
+          <a key={index} className="curved-marquee-item" href={item.href}>
+            <img
+              src={item.src}
+              alt={`Image ${index}`}
+              className=" w-[100px] h-auto"
+            />
+          </a>
         ))}
       </div>
     </div>
