@@ -18,9 +18,11 @@ export default function Home() {
     <div className="w-screen min-h-screen flex items-center justify-center flex-col ">
       {/* <h6 className="title mb-1">PRODUCTION MANAGER®</h6> */}
       <CurvedMarquee className="mt-10" images={images} radius={500} rotationSpeed={0.011} />
-      {/* <div className="link text- mt-[-100px] flex flex-col items-center">
-        <a className="cursor-pointer">FULL SERVICE</a>
-        <a className="cursor-pointer">CONTACT</a>
+      {<div className="link text- mt-[-10px] flex flex-col items-center">
+        <a className="cursor-pointer">SPONSORED BY</a>
+        <a className="cursor-pointer">CHI-BINH TRIEU & MEDIUM GALLERY</a>
+              </div>}
+        {/* <a className="cursor-pointer">CONTACT</a>
         <a className="cursor-pointer">INFO</a>
         <a className="cursor-pointer">SHOP</a>
         <a className="cursor-pointer">LINESHEETS</a>

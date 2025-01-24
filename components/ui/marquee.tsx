@@ -47,7 +47,7 @@ const CurvedMarquee = ({ images, radius = 300, rotationSpeed = 0.01 }: any) => {
             <img
               src={item.src}
               alt={`Image ${index}`}
-              className=" w-[100px] h-auto"
+              className=" w-[150px] h-auto"
             />
           </a>
         ))}
