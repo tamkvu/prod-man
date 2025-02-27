@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className="w-screen min-h-screen flex items-center justify-center flex-col">
       {/* <h6 className="title mb-1">PRODUCTION MANAGER®</h6> */}
-      <CurvedMarquee className="mt-10" images={images} radius={500} rotationSpeed={0.011} />
+      <CurvedMarquee className="mt-10" images={images} radius={500} rotationSpeed={0.005} />
       {<div className="link text- mt-[-10px] flex flex-col items-center">
         {/* <a className="cursor-progress">PRODUCTION MANAGER®</a> */}
               </div>}
