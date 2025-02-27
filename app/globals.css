@@ -87,7 +87,7 @@ body {
 .curved-marquee {
   position: relative;
   transform-style: preserve-3d; /* Enable 3D transforms */
-  width: 175px;
+  width: 255px;
   cursor: crosshair;
 }
 

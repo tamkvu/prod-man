@@ -32,7 +32,7 @@ const CurvedMarquee = ({ images, radius = 300, rotationSpeed = 0.01 }: any) => {
       });
 
       // Update the angle for rotation
-      angleRef.current += rotationSpeed * 10; // Speed adjustment
+      angleRef.current += rotationSpeed * 40; // Speed adjustment
       requestAnimationFrame(animate);
     };
 
@@ -47,7 +47,7 @@ const CurvedMarquee = ({ images, radius = 300, rotationSpeed = 0.01 }: any) => {
             <img
               src={item.src}
               alt={`Image ${index}`}
-              className=" w-[150px] h-auto"
+              className=" w-[250px] h-auto"
             />
           </a>
         ))}
