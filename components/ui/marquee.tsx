@@ -1,17 +1,20 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const CurvedMarquee = ({ images, radius = 300, rotationSpeed = 0.01 }: any) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const marqueeRef = useRef<any>(null);
   const angleRef = useRef(0); // Keeps track of the current angle
+  const animationRef = useRef<any>(null);
+  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
     const animate = () => {
-      if (!marqueeRef.current) return;
+      if (!marqueeRef.current || isPaused) return;
 
       const items = marqueeRef.current.children;
       const totalItems = items.length;
@@ -33,21 +36,31 @@ const CurvedMarquee = ({ images, radius = 300, rotationSpeed = 0.01 }: any) => {
 
       // Update the angle for rotation
       angleRef.current += rotationSpeed * 40; // Speed adjustment
-      requestAnimationFrame(animate);
+      animationRef.current = requestAnimationFrame(animate);
     };
 
-    animate(); // Start animation
-  }, [radius, rotationSpeed]);
+    if (!isPaused) {
+      animationRef.current = requestAnimationFrame(animate);
+    }
+
+    return () => cancelAnimationFrame(animationRef.current);
+  }, [radius, rotationSpeed, isPaused]);
 
   return (
     <div className="curved-marquee-container">
       <div className="curved-marquee" ref={marqueeRef}>
         {images.map((item: any, index: number) => (
-          <a key={index} className="curved-marquee-item" href={item.href}>
+          <a
+            key={index}
+            className="curved-marquee-item select-none"
+            href={item.href}
+          >
             <img
               src={item.src}
               alt={`Image ${index}`}
-              className=" w-[250px] h-auto"
+              className=" w-[250px] h-auto !cursor-pointer select-none"
+              onMouseEnter={() => setIsPaused(true)}
+              onMouseLeave={() => setIsPaused(false)}
             />
           </a>
         ))}

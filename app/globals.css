@@ -100,16 +100,24 @@ body {
   transition: transform 0.3s ease-out;
 }
 
+.curved-marquee-item {
+  position: absolute;
+  width: 800px; /* Image size */
+  height: 800px;
+  object-fit: contain;
+  cursor: crosshair;
+  transition: transform 0.3s ease-out;
+}
+
 .title {
-  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-family: "Arial Narrow", Arial, sans-serif;
   font-size: 1rem;
   font-weight: bold;
   margin-top: 20px;
 }
 
 .link {
-  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-family: "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
   font-size: 1rem;
-
 }
