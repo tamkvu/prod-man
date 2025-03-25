@@ -10,7 +10,9 @@ const images = [
   { src: "/molenne.png", href: "https://www.ll.com", target: "_blank", rel: "noopener noreferrer" },
   { src: "/n10as.png", href: "https://www.mm.com", target: "_blank", rel: "noopener noreferrer" },
   { src: "/cheers.png", href: "https://www.nn.com", target: "_blank", rel: "noopener noreferrer" },
-  { src: "/tenrec.png", href: "https://www.oo.com", target: "_blank", rel: "noopener noreferrer" }
+  { src: "/tenrec.png", href: "https://www.oo.com", target: "_blank", rel: "noopener noreferrer" },
+  { src: "/piano.png", href: "https://www.oo.com", target: "_blank", rel: "noopener noreferrer" }
+
 ];
 
 export default function Home() {
