@@ -3,13 +3,13 @@ import CurvedMarquee from "@/components/ui/marquee";
 const images = [
   {
     src: "/sxcom.png",
-    href: "https://www.abc.com",
-    target: "_blank",
-    rel: "noopener noreferrer",
+    // href: "https://www.abc.com",
+    // target: "_blank",
+    // rel: "noopener noreferrer",
   },
   {
     src: "/rbw.png",
-    href: "https://www.def.com",
+    href: "https://www.raisedbywolves.ca",
     target: "_blank",
     rel: "noopener noreferrer",
   },
@@ -21,21 +21,21 @@ const images = [
   },
   {
     src: "/lopez.png",
-    href: "https://www.hh.com",
+    href: "https://www.lopezmtl.ca",
     target: "_blank",
     rel: "noopener noreferrer",
   },
   {
     src: "/pny.png",
-    href: "https://www.jj.com",
+    href: "https://www.punkandyo.com",
     target: "_blank",
     rel: "noopener noreferrer",
   },
   {
     src: "/fofa.png",
-    href: "https://www.kk.com",
-    target: "_blank",
-    rel: "noopener noreferrer",
+    // href: "https://www.kk.com",
+    // target: "_blank",
+    // rel: "noopener noreferrer",
   },
   {
     src: "/molenne.png",
@@ -45,27 +45,27 @@ const images = [
   },
   {
     src: "/n10as.png",
-    href: "https://www.mm.com",
+    href: "https://www.n10.as",
     target: "_blank",
     rel: "noopener noreferrer",
   },
   {
     src: "/cheers.png",
-    href: "https://www.nn.com",
+    href: "https://www.instagram.com/molenne.montreal/",
     target: "_blank",
     rel: "noopener noreferrer",
   },
   {
     src: "/tenrec.png",
-    href: "https://www.oo.com",
+    href: "https://www.tenrec.shop",
     target: "_blank",
     rel: "noopener noreferrer",
   },
   {
     src: "/piano.png",
-    href: "https://www.oo.com",
-    target: "_blank",
-    rel: "noopener noreferrer",
+    // href: "https://www.oo.com",
+    // target: "_blank",
+    // rel: "noopener noreferrer",
   },
 ];
 
