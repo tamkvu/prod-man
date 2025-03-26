@@ -81,14 +81,14 @@ body {
   position: relative;
   overflow: hidden; /* Prevent overflow of images */
   padding-top: 100px;
-  cursor: crosshair;
+  cursor: cursor;
 }
 
 .curved-marquee {
   position: relative;
   transform-style: preserve-3d; /* Enable 3D transforms */
   width: 255px;
-  cursor: crosshair;
+  cursor: cursor;
 }
 
 .curved-marquee-item {
@@ -96,7 +96,7 @@ body {
   width: 800px; /* Image size */
   height: 800px;
   object-fit: contain;
-  cursor: crosshair;
+  cursor: cursor;
   transition: transform 0.3s ease-out;
 }
 
@@ -105,7 +105,7 @@ body {
   width: 800px; /* Image size */
   height: 800px;
   object-fit: contain;
-  cursor: crosshair;
+  cursor: cursor;
   transition: transform 0.3s ease-out;
 }
 
