@@ -3,7 +3,7 @@ import CurvedMarquee from "@/components/ui/marquee";
 const images = [
   {
     src: "/sxcom.png",
-    // href: "https://www.abc.com",
+    // href: "https://www.reuters.com/article/us-sexcom/sex-com-domain-name-sold-for-13-million-idUSTRE69K3KY20101021/",
     // target: "_blank",
     // rel: "noopener noreferrer",
   },
@@ -39,7 +39,7 @@ const images = [
   },
   {
     src: "/molenne.png",
-    href: "https://www.ll.com",
+    href: "https://www.instagram.com/molenne.montreal/",
     target: "_blank",
     rel: "noopener noreferrer",
   },
@@ -51,19 +51,25 @@ const images = [
   },
   {
     src: "/cheers.png",
-    href: "https://www.instagram.com/molenne.montreal/",
+    href: "https://www.instagram.com/cheersmatesoda/",
     target: "_blank",
     rel: "noopener noreferrer",
   },
   {
     src: "/tenrec.png",
-    href: "https://www.tenrec.shop",
+    href: "https://www.tenrec.shop/",
     target: "_blank",
     rel: "noopener noreferrer",
   },
   {
     src: "/piano.png",
-    // href: "https://www.oo.com",
+    // href: "https://www.instagram.com/whatis.pianogolf/",
+    // target: "_blank",
+    // rel: "noopener noreferrer",
+  },
+  {
+    src: "/hdb.png",
+    // href: "https://www.instagram.com/has_dac_biet/",
     // target: "_blank",
     // rel: "noopener noreferrer",
   },
@@ -72,16 +78,16 @@ const images = [
 export default function Home() {
   return (
     <div className="w-screen min-h-screen flex items-center justify-center flex-col">
-      {/* <h6 className="title mb-1">PRODUCTION MANAGER®</h6> */}
+      {/* <h6 className="title mb-1">CONTACT US</h6> */}
       <CurvedMarquee
-        className="mt-10"
+        className="mt-1"
         images={images}
         radius={500}
         rotationSpeed={0.005}
       />
       {
         <div className="link text- mt-[-10px] flex flex-col items-center">
-          {/* <a className="cursor-progress">PRODUCTION MANAGER®</a> */}
+          {/* <a className="cursor-progress">AFFILIATIONS</a> */}
         </div>
       }
       {/* <a className="cursor-pointer">CONTACT</a>

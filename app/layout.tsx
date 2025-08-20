@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "PRODUCTION MANAGER® CONSULTING",
-  description: "We try our very best!",
+  description: "We do our very best!",
 };
 
 export default function RootLayout({
